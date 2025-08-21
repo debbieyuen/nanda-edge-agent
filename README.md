@@ -7,7 +7,7 @@
   * NVIDIA Jetson Orin Nano 8GB Module
   * USB Type-C Power Adapter
   * USB Type-C to Type-A Cable
-  * microSD Card or Samsung 970 EVO Plus SSD 1TB
+  * microSD Card (64 GB or higher) or SSD 1TB
 * Jetson Orin Nano
 * 
 
