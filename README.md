@@ -2,7 +2,7 @@
 
 ## Requirements
 * Personal Computer:
-  * JetPack SDK 6.2.1
+  * JetPack SDK 6.2.1 (make sure you are not downloading JetPack 5.1.3 from the Jetson AI Docs! It will give you an error when trying to boot)
   * Jetson Orin Nano Developer Kit - JetPack 5.1.3 image
   * Balena Etcher
 * Hardware Materials:
