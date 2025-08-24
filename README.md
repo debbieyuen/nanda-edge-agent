@@ -40,4 +40,13 @@ In my case, my microSD was `/dev/disk16 (external, physical)`. To eject I did th
 diskutil eject /dev/disk16
 ```
 
+### Step 4
+Complete the setup process and install the needed tools including Python, Chromium, Git, and GitLFS. 
+
+### Step 5
+To create a new agent, start with NANDA's main repository. Create a fork of the NANDA repository and clone your forked repo.
+```bash
+git clone https://github.com/projnanda/adapter
+```
+
 ## Contribution 
