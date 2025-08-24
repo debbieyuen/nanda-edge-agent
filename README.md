@@ -17,7 +17,12 @@
   * Advanced Package Tool (apt) package manager
   * Python 3
 
-
+## Resources
+* [Initial Setup Guide for Jetson Orin Nano Developer Kit](https://www.jetson-ai-lab.com/initial_setup_jon.html#__tabbed_6_1)
+* [Jetson Orin Nano Developer Kit Getting Started Guide](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit)
+* [JetPack 6.1](https://developer.nvidia.com/embedded/jetpack-sdk-61)
+* [Jetson Orin Nano Super Setup Guide | OS Install, NVMe Upgrade, + Ollama AI](https://www.youtube.com/watch?v=NksYHoLcPKs)
+* [NVIDIA Jetson Orin Nano Super COMPLETE Setup Guide & Tutorial](https://www.youtube.com/watch?v=-PjMC0gyH9s)
 ## Set Up
 ### Step 1
 Install [NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack). We are currently working with [JetPack 6.1](https://developer.nvidia.com/embedded/jetpack-sdk-61) and a microSD Card of 1 TB. In order to download, you will need to sign into your [NVIDIA account](https://developer.nvidia.com/account). The SDK Manager needs to meet the minimum requirements of screen resolution equal or larger than 1440x900. Once you have the SDK Manager, log in to your NVIDIA Developer account. After signing in, you will see a screen displaying informatioin about your system configuration including your **host machine** and your **target hardware** in our case we will be working with the Jetson AGX Orin modules but will continue with the microSD way of setting up. 
