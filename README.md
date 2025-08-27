@@ -31,6 +31,23 @@ Install [NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack). We 
 Next, we can get started with setting up our hardware! If you have the Jetson Orin Nano from the Developer Kit, you will need to upgrade to the latest firmware. This is because the Jetson Orin Nano Developer Kit comes with an old firmware flashed at the factory, which is NOT compatible with JetPack 6.x.
 Therefore, you must upgrade to the latest firmware, before inserting SD card flashed with JetPack 6.x image (unless the firmware previuosly updated). Additional instructions are listed [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit#prepare).
 
+### Step 3
+Download the SD card image onto your PC. Here, we will be using JetPack 5.1.3 Image. Use [Balena Etcher](https://etcher.balena.io) to flash image to SD card.
+In your terminal, if you do not see your microSD card anymore after flashing, you can run the following commands to check if the flash and verification process were successful. 
+
+```bash
+diskutil list
+```
+
+In my case, my microSD was `/dev/disk16 (external, physical)`. To eject I did the following: 
+
+```bash
+diskutil eject /dev/disk16
+```
+
+### Step 4
+Complete the setup process and install the needed tools including Python, Chromium, Git, and GitLFS. 
+
 On my hardware, Chromium did not open correctly. Running the commands below gave me `E: Package 'chromium' has no installation candidate`.
 
 ```bash
@@ -53,22 +70,13 @@ sudo flatpak install -y flathub org.chromium.Chromium
 flatpak run org.chromium.Chromium
 ```
 
-### Step 3
-Download the SD card image onto your PC. Here, we will be using JetPack 5.1.3 Image. Use [Balena Etcher](https://etcher.balena.io) to flash image to SD card.
-In your terminal, if you do not see your microSD card anymore after flashing, you can run the following commands to check if the flash and verification process were successful. 
+After installing Chromium, install an IDE of your choice. I will be working with PyCharm and Visual Studio Code.
 
+If you do not have git, to install git: 
 ```bash
-diskutil list
+sudo apt-get install git
 ```
 
-In my case, my microSD was `/dev/disk16 (external, physical)`. To eject I did the following: 
-
-```bash
-diskutil eject /dev/disk16
-```
-
-### Step 4
-Complete the setup process and install the needed tools including Python, Chromium, Git, and GitLFS. 
 
 ### Step 5
 To create a new agent, start with NANDA's main repository. Create a fork of the NANDA repository and clone your forked repo.
