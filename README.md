@@ -77,6 +77,11 @@ If you do not have git, to install git:
 sudo apt-get install git
 ```
 
+Install Python
+```bash
+sudo apt install -y python3 python3-pip python3-venv build-essential python3-dev
+```
+
 
 ### Step 5
 To create a new agent, start with NANDA's main repository. Create a fork of the NANDA repository and clone your forked repo.
