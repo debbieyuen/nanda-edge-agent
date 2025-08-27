@@ -31,6 +31,28 @@ Install [NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack). We 
 Next, we can get started with setting up our hardware! If you have the Jetson Orin Nano from the Developer Kit, you will need to upgrade to the latest firmware. This is because the Jetson Orin Nano Developer Kit comes with an old firmware flashed at the factory, which is NOT compatible with JetPack 6.x.
 Therefore, you must upgrade to the latest firmware, before inserting SD card flashed with JetPack 6.x image (unless the firmware previuosly updated). Additional instructions are listed [here](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit#prepare).
 
+On my hardware, Chromium did not open correctly. Running the commands below gave me `E: Package 'chromium' has no installation candidate`.
+
+```bash
+sudo apt update
+sudo apt install -y chromium
+```
+
+To reinstall Chromium, I ran the following commands in my Terminal. 
+
+```bash
+sudo apt update
+sudo apt install -y flatpak
+sudo flatpak remote-add --if-not-exists flathub http://flathub.org/repo/flathub.flatpakrepo
+flatpak remotes
+```
+
+Install Chromium
+```bash
+sudo flatpak install -y flathub org.chromium.Chromium
+flatpak run org.chromium.Chromium
+```
+
 ### Step 3
 Download the SD card image onto your PC. Here, we will be using JetPack 5.1.3 Image. Use [Balena Etcher](https://etcher.balena.io) to flash image to SD card.
 In your terminal, if you do not see your microSD card anymore after flashing, you can run the following commands to check if the flash and verification process were successful. 
