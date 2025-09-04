@@ -3,6 +3,7 @@
 ## Requirements
 * Personal Computer:
   * [JetPack SDK 6.1](https://developer.nvidia.com/embedded/jetpack-sdk-61) (make sure you are not downloading JetPack 5.1.3 from the Jetson AI Docs! It will give you an error when trying to boot)
+  * Need a computer to flash to the Jetson
   * Jetson Orin Nano Developer Kit - JetPack 5.1.3 image
   * Balena Etcher
 * Hardware Materials:
@@ -10,7 +11,7 @@
   * USB Type-C Power Adapter
   * USB Type-C to Type-A Cable
   * microSD Card (64 GB or higher)
-  * NVME SSD 1TB or higher
+  * NVME SSD 1TB or higher. The Jetson has two slots - a 2230 NVMe and a 2280 NVMe
 * Jetson Orin Nano
   * Chromium
   * Git and Git LFS
