@@ -46,7 +46,13 @@ In my case, my microSD was `/dev/disk16 (external, physical)`. To eject I did th
 diskutil eject /dev/disk16
 ```
 
+You will know that Balena flashed the SD card correctly if you no longer see the SD card showing on your desktop. 
+
 ### Step 4
+Next, connect your monitor, mouse, and keyboard to the Jetson. If needed you may also plug in your Ethernet port. 
+
+You will need to use a **Display Port** to plug in the monitor. Lastly, turn on your Jetson by plugging in your power supply. 
+
 Complete the setup process and install the needed tools including Python, Chromium, Git, and GitLFS. 
 
 On my hardware, Chromium did not open correctly. Running the commands below gave me `E: Package 'chromium' has no installation candidate`.
@@ -90,4 +96,20 @@ To create a new agent, start with NANDA's main repository. Create a fork of the 
 git clone https://github.com/projnanda/adapter
 ```
 
+### Step 6 
+Connect the NVMe SSD to the Jetson Nano Orin. Remove the screws from the bottom of the hardware to install. The screws help keep the NVMe in place. 
+
+### Step 7 
+Now that we have the Jetson Jetpack OS running, we will see the NVIDIA logo as your background image. At the top right hand corner, you will see options for power supply including:
+* 15W (mid-range)
+* 7W (ideal for battery powered scenarios) 
+* MAXN (full power output and performance)
+
+## Examples 
+
+### Ollama 
+Lets try running a local LLM (Text Generation) on the Jetson. First, navigate to the Chromium web browser. 
+We will need to install Ollama and connect it to a web interface to work with. Communicate with a model through the terminal. 
+https://www.jetson-ai-lab.com/tutorial_ollama.html 
+Try it with Jetson Docker containers instead. 
 ## Contribution 
